@@ -20,7 +20,7 @@ def test_quest_should_see_login_form(browser):
     login_page.should_be_login_form()
 
 
-def test_should_be_register_form(browser):
+def test_quest_should_see_register_form(browser):
     link = "http://selenium1py.pythonanywhere.com/"
     page = MainPage(browser, link)
     page.open()
