@@ -30,9 +30,9 @@ class ProductPage(BasePage):
     def should_be_book_name(self):
         book_name = self.browser.find_element(*ProductPageLocators.BOOK_NAME).text
         book_name_in_basket = self.browser.find_element(*ProductPageLocators.BOOK_NAME_IN_BASKET).text
-        assert book_name in book_name_in_basket, "No message about adding book to basket"
+        assert book_name == book_name_in_basket, "Error message about adding book to basket"
 
     def should_be_book_cost(self):
         cost_of_the_book = self.browser.find_element(*ProductPageLocators.COST_OF_THE_BOOK).text
         cost_of_the_book_in_basket = self.browser.find_element(*ProductPageLocators.COST_OF_THE_BOOK_IN_BASKET).text
-        assert cost_of_the_book in cost_of_the_book_in_basket
+        assert cost_of_the_book == cost_of_the_book_in_basket, "Error message about cost book in basket"
