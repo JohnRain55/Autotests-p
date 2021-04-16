@@ -8,9 +8,16 @@ class MainPageLocators:
 class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_LINK = (By.CSS_SELECTOR, "[class=\"btn-group\"] > [class=\"btn btn-default\"]")
 
 
-class LoginPageLocator:
+class BasketPageLocators:
+    PAGE_HEADER = (By.CSS_SELECTOR, "[class=\"page-header action\"]")
+    EMPTY_BASKET_TEXT = (By.CSS_SELECTOR, "#content_inner > p")
+    BASKET_FORMSET = (By.CSS_SELECTOR, "#basket_formset")
+
+
+class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
 
