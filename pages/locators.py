@@ -28,9 +28,6 @@ class LoginPageLocators:
     REGISTER_SUBMIT = (By.CSS_SELECTOR, "[name=\"registration_submit\"]")
 
 
-
-
-
 class ProductPageLocators:
     ADD_TO_BASKET_FORM = (By.CSS_SELECTOR, "#add_to_basket_form")
     ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, "[value=\"Add to basket\"]")
