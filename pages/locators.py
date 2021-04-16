@@ -17,3 +17,5 @@ class ProductPageLocators():
     BOOK_NAME_IN_BASKET = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")
     COST_OF_THE_BOOK = (By.CSS_SELECTOR, "#content_inner .price_color")
     COST_OF_THE_BOOK_IN_BASKET = (By.CSS_SELECTOR, "#messages > div:nth-child(3) > div > p > strong")
+    SUCCESS_MESSAGE = \
+        (By.CSS_SELECTOR, "#messages > [class=\"alert alert-safe alert-noicon alert-success  fade in\"]:nth-child(1)")
